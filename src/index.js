@@ -6,12 +6,30 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+    <div className='container-fluid'>
+      <div className='row'>
+        <div className='col-12'>
+          <div className='nav d-flex align-items-center justify-content-around'>
+            <div className='logoBox'>
+              <img src='Untitled.png'/>
+            </div>
+            <div className='navContentBox'>
+              <ul className='d-inline'>
+                <li><i class="ri-apps-line"></i>categories</li>
+                <li><i class="ri-arrow-drop-down-line"></i> home</li>
+                <li><i class="ri-arrow-drop-down-line"></i> pages</li>
+                <li><i class="ri-arrow-drop-down-line"></i> courses</li>
+                <li><i class="ri-arrow-drop-down-line"></i> blog</li>
+                <li><i class="ri-arrow-drop-down-line"></i> contact</li>
+              </ul>
+              <input type="text"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
